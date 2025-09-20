@@ -83,6 +83,36 @@ Install all dependencies with:
 pip install -r requirements.txt
 ```
 
+## Model Summary
+```
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+MultiClassCNN                            [32, 3]                   --
+├─Conv2d: 1-1                            [32, 16, 224, 224]        448
+├─ReLU: 1-2                              [32, 16, 224, 224]        --
+├─MaxPool2d: 1-3                         [32, 16, 112, 112]        --
+├─Conv2d: 1-4                            [32, 32, 112, 112]        4,640
+├─ReLU: 1-5                              [32, 32, 112, 112]        --
+├─MaxPool2d: 1-6                         [32, 32, 56, 56]          --
+├─Flatten: 1-7                           [32, 100352]              --
+├─Linear: 1-8                            [32, 128]                 12,845,184
+├─ReLU: 1-9                              [32, 128]                 --
+├─Dropout: 1-10                          [32, 128]                 --
+├─Linear: 1-11                           [32, 3]                   387
+==========================================================================================
+Total params: 12,850,659
+Trainable params: 12,850,659
+Non-trainable params: 0
+Total mult-adds (Units.GIGABYTES): 2.99
+==========================================================================================
+Input size (MB): 19.27
+Forward/backward pass size (MB): 308.31
+Params size (MB): 51.40
+Estimated Total Size (MB): 378.99
+==========================================================================================
+```
+
 ##  Results
 
 Add your training accuracy, loss curves, and sample predictions here.
