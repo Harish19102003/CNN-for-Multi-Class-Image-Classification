@@ -2,7 +2,7 @@
 
 A Convolutional Neural Network (CNN) built with PyTorch to classify images into **Cats, Dogs, and Snakes**.
 
-## 🗂️ Dataset Structure
+##  Dataset Structure
 
 Organize your dataset as follows:
 ```
@@ -13,7 +13,7 @@ data/
     snakes/
 ```
 
-## 🔧 Setup
+##  Setup
 
 ### Local Development
 
@@ -28,7 +28,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## 🚀 Usage
+##  Usage
 
 ### 1. Prepare Dataset
 
@@ -52,7 +52,7 @@ python evaluate.py --data_dir data/Animals --model_path saved_model.pth
 python predict.py --image_path path/to/image.jpg --model_path saved_model.pth
 ```
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 CNN-for-Multi-Class-Image-Classification/
@@ -70,7 +70,7 @@ CNN-for-Multi-Class-Image-Classification/
         └── snakes/
 ```
 
-## 📦 Requirements
+##  Requirements
 
 - Python 3.7+
 - PyTorch
@@ -83,14 +83,14 @@ Install all dependencies with:
 pip install -r requirements.txt
 ```
 
-## 📈 Results
+##  Results
 
 Add your training accuracy, loss curves, and sample predictions here.
 
-## 🤝 Contributing
+##  Contributing
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License.
